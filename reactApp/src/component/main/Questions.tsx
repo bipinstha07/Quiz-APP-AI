@@ -173,7 +173,7 @@ export const Questions = () => {
           <form onSubmit={handleGenerateQuiz} className="space-y-8">
             <div>
               <label htmlFor="quizName" className="block text-xs font-medium text-gray-700 mb-2 uppercase tracking-wide">
-                Quiz Name
+                Quiz Topic
               </label>
               <input
                 type="text"
@@ -183,13 +183,13 @@ export const Questions = () => {
                 onChange={handleFormChange}
                 required
                 className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-gray-900 outline-none transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light text-lg"
-                placeholder="Enter quiz name"
+                placeholder="Enter quiz topic"
               />
             </div>
 
             <div>
               <label htmlFor="description" className="block text-xs font-medium text-gray-700 mb-2 uppercase tracking-wide">
-                Description
+                Quiz Description
               </label>
               <textarea
                 id="description"
@@ -199,7 +199,7 @@ export const Questions = () => {
                 required
                 rows={3}
                 className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-gray-900 outline-none transition-colors resize-none bg-transparent text-gray-900 placeholder-gray-400 font-light text-lg"
-                placeholder="Describe the quiz topic"
+                placeholder="Describe the quiz topic and the difficulty level"
               />
             </div>
 

@@ -1,7 +1,7 @@
 package com.aws.solution_architect.service;
 
 import com.aws.solution_architect.dto.QuestionDto;
-import com.aws.solution_architect.repo.Repository;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.core.ParameterizedTypeReference;
@@ -16,13 +16,12 @@ public class QuestionService {
 
 
     private ChatClient chatClient;
-    private Repository questionRepo;
+
     private ModelMapper modelMapper;
 
 
-    public QuestionService(ChatClient.Builder chatbuilder, Repository questionRepo, ModelMapper modelMapper) {
+    public QuestionService(ChatClient.Builder chatbuilder,  ModelMapper modelMapper) {
         this.chatClient = chatbuilder.build();
-        this.questionRepo = questionRepo;
         this.modelMapper = modelMapper;
     }
 

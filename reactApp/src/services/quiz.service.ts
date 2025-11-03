@@ -1,6 +1,6 @@
 import type { AskInstruction, QuestionDto } from '../types/quiz.types';
 
-const API_BASE_URL = 'http://10.0.0.142:9090/api/v1/questions';
+const API_BASE_URL = 'https://gv3mpwjk6k.execute-api.us-east-1.amazonaws.com/production/api/v1/questions';
 
 export const quizService = {
   async generateQuestions(askInstruction: AskInstruction): Promise<QuestionDto[]> {

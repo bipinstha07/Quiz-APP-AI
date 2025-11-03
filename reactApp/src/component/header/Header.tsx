@@ -20,19 +20,19 @@ export const Header = () => {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <a 
-              href="#" 
+              href="/" 
               className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-light uppercase tracking-wide"
             >
               Home
             </a>
             <a 
-              href="#" 
+              href="/about" 
               className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-light uppercase tracking-wide"
             >
               About
             </a>
             <a 
-              href="#" 
+              href="/contact" 
               className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-light uppercase tracking-wide"
             >
               Contact
@@ -82,21 +82,21 @@ export const Header = () => {
           <div className="md:hidden border-t border-gray-200 py-4 animate-fade-in-up">
             <nav className="flex flex-col gap-4">
               <a 
-                href="#" 
+                href="/" 
                 className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-light uppercase tracking-wide py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
               </a>
               <a 
-                href="#" 
+                href="/about" 
                 className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-light uppercase tracking-wide py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
               </a>
               <a 
-                href="#" 
+                href="/contact" 
                 className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-light uppercase tracking-wide py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
